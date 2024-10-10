@@ -1,0 +1,42 @@
+.pagination {
+	gap: 12px;
+	display: flex;
+  align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.pagination strong {
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+
+.pagination button {
+	width: 30px;
+	height: 30px;
+	display: grid;
+  cursor: pointer;
+	border-radius: 50%;
+	place-content: center;
+	background-color: var(--primary-color);
+	box-shadow: 0 0 6px 0 var(--input-color);
+}
+
+.active {
+  font-weight: 800;
+}
+
+@media (max-width: 425px) {
+  .pagination {
+    gap: 8px;
+  }
+
+  .pagination strong {
+    letter-spacing: normal;
+  }
+
+  .pagination button {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,36 @@
+.navbar {
+	width: 100%;
+	color: var(--text-color);
+	background-color: var(--primary-color);
+}
+
+.nav_container {
+  display: flex;
+	padding: 20px;
+	margin: 0 auto;
+	max-width: 1200px;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+	font-size: 22px;
+	font-weight: 800;
+}
+
+.navbar button {
+	gap: 6px;
+	display: flex;
+	font-size: 16px;
+	cursor: pointer;
+	align-items: center;
+}
+
+@media (max-width: 425px) {
+  .navbar h1 {
+    font-size: 18px;
+  }
+
+  .navbar button {
+    font-size: 14px;
+  }
+}

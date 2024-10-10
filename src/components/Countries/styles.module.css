@@ -1,0 +1,46 @@
+.countries_list {
+	gap: 32px;
+	display: grid;
+	list-style: none;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fill, 262px);
+}
+
+.countries_list li {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 4px;
+	background-color: var(--primary-color);
+	box-shadow: 0 0 8px 0 var(--input-color);
+}
+
+.countries_list li:hover {
+	scale: 1.06;
+	cursor: pointer;
+}
+
+.flag img {
+  width: 262px;
+  height: 140px;
+	object-fit: cover;
+	box-shadow: 0 1px 6px 2px var(--background);
+}
+
+.info {
+	gap: 8px;
+	padding: 12px;
+	display: flex;
+	font-size: 14px;
+	font-weight: 400;
+	flex-direction: column;
+	color: var(--text-color);
+}
+
+.info h4 {
+	font-size: 18px;
+	margin-block: 4px;
+}
+
+.info p strong {
+	font-weight: 600;
+}

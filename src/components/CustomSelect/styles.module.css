@@ -1,0 +1,39 @@
+.custom_select {
+	position: relative;
+	color: var(--text-color);
+}
+
+.select_button {
+	gap: 12px;
+	display: flex;
+  cursor: pointer;
+	align-items: center;
+	padding: 10px 24px;
+	border-radius: 4px;
+	background-color: var(--primary-color);
+}
+
+.select_options {
+	top: 110%;
+	left: 0;
+	right: 0;
+  z-index: 100;
+	display: flex;
+  overflow: hidden;
+	position: absolute;
+	border-radius: 4px;
+	flex-direction: column;
+	background-color: var(--primary-color);
+}
+
+.select_options button {
+  cursor: pointer;
+  text-align: start;
+	padding: 6px 24px;
+}
+
+
+.select_options button:hover {
+  color: var(--background);
+  background-color: var(--text-color);
+}

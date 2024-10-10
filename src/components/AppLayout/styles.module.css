@@ -1,0 +1,14 @@
+.app_container {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	background-color: var(--background);
+}
+
+.app_container main {
+	flex: 1;
+  gap: 20px;
+	width: 100%;
+  display: flex;
+  overflow: auto;
+}
