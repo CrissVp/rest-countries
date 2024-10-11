@@ -70,7 +70,7 @@ const CountryItem = ({ country }: { country: CountryBase }) => {
 			<Link href={`/country/${country.cca3}`}>
 				<div className={styles.flag}>
 					<Image
-						src={country.flags.png}
+						src={country.flags.svg}
 						alt={country.flags.alt}
 						loading={'eager'}
 						height={140}

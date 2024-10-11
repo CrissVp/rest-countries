@@ -1,10 +1,16 @@
-import { getCountry, getCountryBordersName } from '@/services/countries';
+import { getAllCountries, getCountry, getCountryBordersName } from '@/services/countries';
 import { IoIosArrowRoundBack } from 'react-icons/io';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import Error from '@/components/Error';
 import styles from './styles.module.css';
+
+export async function generateStaticParams() {
+	const { data: countries } = await getAllCountries();
+	if (countries) return countries.map((country) => ({ name: country.cca3 }));
+	return [];
+}
 
 export default async function CountryPage({ params }: { params: { name: string } }) {
 	const { error, data } = await getCountry(params.name);
